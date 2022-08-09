@@ -28,7 +28,7 @@ const app = {
     songs: [{
             name: "Vì mẹ anh bắt chia tay",
             singer: "Miu Lê",
-            path: "./asset/musics/VimeAnhBatChiaTay.mp3",
+            path: "./asset/musics/ViMeAnhBatChiaTay.mp3",
             image: "./asset/imgs/MiuLe.jpg"
         },
         {
