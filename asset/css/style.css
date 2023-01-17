@@ -149,6 +149,7 @@ header h2 {
 .song {
     display: flex;
     align-items: center;
+    margin-top: 10px;
     margin-bottom: 12px;
     background-color: #fff;
     padding: 8px 16px;
