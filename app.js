@@ -50,22 +50,10 @@ const app = {
             image: "./asset/imgs/MiuLe.jpg"
         },
         {
-            name: "Một Cú Lừa",
-            singer: "Bích Phương",
-            path: "./asset/musics/MotCuLua.mp3",
-            image: "./asset/imgs/BichPhuong.jpg"
-        },
-        {
             name: "Một Ngàn Nỗi Đau",
             singer: "Văn Mai Hương",
             path: "./asset/musics/MotNganNoiDau.mp3",
             image: "./asset/imgs/VanMaiHuong.jpg"
-        },
-        {
-            name: "Kẻ Cắp Gặp Bà Già",
-            singer: "Hoàng Thùy Linh",
-            path: "./asset/musics/KeCapGapBaGia.mp3",
-            image: "./asset/imgs/HoangThuyLinh.jpg"
         },
         {
             name: "Ngày Tận Thế",
