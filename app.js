@@ -26,9 +26,27 @@ const app = {
         localStorage.setItem(PLAYER_STORAGE_KEY, JSON.stringify(this.config));
     },
     songs: [{
+            name: "Để tôi ôm em bằng giai điệu này",
+            singer: "Kai Đinh, MIN, GREY D",
+            path: "./asset/musics/DeToiOmEmBangGiaiDieuNay.mp3",
+            image: "./asset/imgs/DeToiOmEmBangGiaiDieuNay.jpg"
+        },
+        {
+            name: "Tình nào không như tình đầu",
+            singer: "Trung Quân idol",
+            path: "./asset/musics/TinhNaoKhongNhuTinhDau.mp3",
+            image: "./asset/imgs/TinhNaoKhongNhuTinhDau_TrungQuan.jpg"
+        },
+        {
+            name: "Anh tự do nhưng cô đơn",
+            singer: "Trung Quân idol",
+            path: "./asset/musics/AnhTuDoNhungCoDon.mp3",
+            image: "./asset/imgs/AnhTuDoNhungCoDon_TrungQuan.jpg"
+        },
+        {
             name: "Vì mẹ anh bắt chia tay",
             singer: "Miu Lê",
-            path: "./asset/musics/VimeAnhBatChiaTay.mp3",
+            path: "./asset/musics/ViMeAnhBatChiaTay.mp3",
             image: "./asset/imgs/MiuLe.jpg"
         },
         {
