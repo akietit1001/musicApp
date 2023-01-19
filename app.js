@@ -11,6 +11,8 @@ const audio = $('#audio');
 const cd = $('.cd');
 const playBtn = $('.btn-toggle-play');
 const progress = $('#progress');
+const currentTime = $('.current-time');
+const duration = ('all-time');
 const nextBtn = $('.btn-next');
 const prevBtn = $('.btn-prev');
 const randomBtn = $('.btn-random');
@@ -50,6 +52,12 @@ const app = {
             image: "./asset/imgs/AnhTuDoNhungCoDon_TrungQuan.jpg"
         },
         {
+            name: "Nắm tay em khi mưa đến",
+            singer: "Ái Phương",
+            path: "./asset/musics/NamTayEmKhiMuaDen.mp3",
+            image: "./asset/imgs/NamTayEmKhiMuaDen.jpg"
+        },
+        {
             name: "Một Ngàn Nỗi Đau",
             singer: "Văn Mai Hương",
             path: "./asset/musics/MotNganNoiDau.mp3",
@@ -74,6 +82,7 @@ const app = {
             image: "./asset/imgs/BuiAnhTuan.jpg"
         },
     ],
+
 
     loadCurrentSong: function() {
         heading.textContent = this.currentSong.name;
@@ -107,6 +116,7 @@ const app = {
         })
     },
 
+
     handleEvents: function() {
         const _this = this;
         const cdWidth = cd.offsetWidth;
@@ -120,8 +130,6 @@ const app = {
         })
 
         cdThumbAnimate.pause();
-
-
 
         // Zoom
         document.onscroll = () => {
@@ -159,7 +167,12 @@ const app = {
         }
 
         // Skip in the song
-        progress.onchange = (e) => {
+        progress.ondrag = (e) => {
+            const seekTime = e.target.value / 100 * audio.duration;
+            audio.currentTime = seekTime;
+        }
+
+        progress.onclick = (e) => {
             const seekTime = e.target.value / 100 * audio.duration;
             audio.currentTime = seekTime;
         }
