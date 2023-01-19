@@ -32,22 +32,22 @@ const app = {
             image: "./asset/imgs/DeToiOmEmBangGiaiDieuNay.jpg"
         },
         {
+            name: "Rồi ta sẽ ngắm pháo hoa cùng nhau",
+            singer: "O.lew",
+            path: "./asset/musics/RoiTaSeNgamPhaoHoaCungNhau.mp3",
+            image: "./asset/imgs/RoiTaSeNgamPhaoHoaCungNhau.jpg"
+        },
+        {
             name: "Tình nào không như tình đầu",
-            singer: "Trung Quân idol",
+            singer: "Trung Quân Idol",
             path: "./asset/musics/TinhNaoKhongNhuTinhDau.mp3",
             image: "./asset/imgs/TinhNaoKhongNhuTinhDau_TrungQuan.jpg"
         },
         {
             name: "Anh tự do nhưng cô đơn",
-            singer: "Trung Quân idol",
+            singer: "Trung Quân Idol",
             path: "./asset/musics/AnhTuDoNhungCoDon.mp3",
             image: "./asset/imgs/AnhTuDoNhungCoDon_TrungQuan.jpg"
-        },
-        {
-            name: "Vì mẹ anh bắt chia tay",
-            singer: "Miu Lê",
-            path: "./asset/musics/ViMeAnhBatChiaTay.mp3",
-            image: "./asset/imgs/MiuLe.jpg"
         },
         {
             name: "Một Ngàn Nỗi Đau",

@@ -46,7 +46,8 @@ html {
     width: 100%;
     max-width: 480px;
     border-bottom: 1px solid #ebebeb;
-    border-radius: 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
 }
 
 
@@ -101,6 +102,10 @@ header h2 {
     font-size: 18px;
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 .control .btn.active {
     color: var(--primary-color);
 }
@@ -141,14 +146,13 @@ header h2 {
 /* PLAYLIST */
 
 .playlist {
-    margin-top: 408px;
+    margin-top: 400px;
     padding-top: 32px;
 }
 
 .song {
     display: flex;
     align-items: center;
-    margin-top: 10px;
     margin-bottom: 12px;
     background-color: #fff;
     padding: 8px 16px;
