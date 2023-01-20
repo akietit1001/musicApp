@@ -12,7 +12,7 @@ const cd = $('.cd');
 const playBtn = $('.btn-toggle-play');
 const progress = $('#progress');
 const currentTime = $('.current-time');
-const duration = ('all-time');
+const duration = $('.all-time');
 const nextBtn = $('.btn-next');
 const prevBtn = $('.btn-prev');
 const randomBtn = $('.btn-random');
@@ -123,6 +123,11 @@ const app = {
         },
     ],
 
+    runFormatTime: function(time) {
+        let minutes = Math.round(time / 60);
+        let seconds = Math.round((time - minutes) * 10 / 100);
+        console.log(`${minutes}:${seconds}`);
+    },
 
     loadCurrentSong: function() {
         heading.textContent = this.currentSong.name;
@@ -178,6 +183,7 @@ const app = {
             cd.style.width = newCdWidth > 0 ? newCdWidth + 'px' : 0;
             cd.style.opacity = newCdWidth / cdWidth;
         }
+
 
         // Click play
         playBtn.onclick = () => {
@@ -317,8 +323,9 @@ const app = {
     scrollToActiveSong: function() {
         setTimeout(() => {
             $('.song.active').scrollIntoView({
-                behavior: smooth,
-                block: center,
+                behavior: "smooth",
+                block: "center",
+                inline: "nearest"
             })
         }, 200);
     },
@@ -334,7 +341,7 @@ const app = {
         this.render();
         this.loadCurrentSong();
         this.handleEvents();
-
+        this.sortSong();
         randomBtn.classList.toggle('active', _this.isRandom);
 
         repeatBtn.classList.toggle('active', _this.isRepeat);
