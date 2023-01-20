@@ -66,16 +66,48 @@ const app = {
             image: "./asset/imgs/KhongYeuCungChangCoDon.jpg"
         },
         {
+            name: "Cho em gần anh thêm chút nữa",
+            singer: "Hương Tràm",
+            path: "./asset/musics/ChoEmGanAnhThemChutNua.mp3",
+            image: "./asset/imgs/ChoEmGanAnhThemChutNua.jpg"
+        },
+
+        {
+            name: "Rời bỏ",
+            singer: "Hòa Minzy",
+            path: "./asset/musics/RoiBo.mp3",
+            image: "./asset/imgs/RoiBo.jpg"
+        },
+        {
+            name: "Chấp nhận",
+            singer: "Hòa Minzy",
+            path: "./asset/musics/ChapNhan.mp3",
+            image: "./asset/imgs/ChapNhan.jpg"
+        },
+
+        {
             name: "Một Ngàn Nỗi Đau",
             singer: "Văn Mai Hương",
             path: "./asset/musics/MotNganNoiDau.mp3",
             image: "./asset/imgs/VanMaiHuong.jpg"
         },
         {
+            name: "Ta còn thuộc về nhau",
+            singer: "Hương Tràm",
+            path: "./asset/musics/TaConThuocVeNhau.mp3",
+            image: "./asset/imgs/TaConThuocVeNhau.jpg"
+        },
+        {
             name: "Ngày Tận Thế",
             singer: "Tóc Tiên",
             path: "./asset/musics/NgayTanThe.mp3",
             image: "./asset/imgs/TocTien.jpg"
+        },
+        {
+            name: "Hoa dại",
+            singer: "Hòa Minzy",
+            path: "./asset/musics/HoaDai.mp3",
+            image: "./asset/imgs/HoaDai.jpg"
         },
         {
             name: "Em Đã Thương Người Ta Hơn Anh",
