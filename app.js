@@ -17,6 +17,8 @@ const nextBtn = $('.btn-next');
 const prevBtn = $('.btn-prev');
 const randomBtn = $('.btn-random');
 const repeatBtn = $('.btn-repeat');
+const valueProgress = $('.progress::-webkit-slider-thumb');
+console.log(valueProgress)
 const app = {
     currentIndex: 0,
     isPlaying: false,
@@ -56,6 +58,12 @@ const app = {
             singer: "Ái Phương",
             path: "./asset/musics/NamTayEmKhiMuaDen.mp3",
             image: "./asset/imgs/NamTayEmKhiMuaDen.jpg"
+        },
+        {
+            name: "Không yêu cũng chẳng cô đơn",
+            singer: "Đỗ Hoàng Dương",
+            path: "./asset/musics/KhongYeuCungChangCoDon.mp3",
+            image: "./asset/imgs/KhongYeuCungChangCoDon.jpg"
         },
         {
             name: "Một Ngàn Nỗi Đau",
@@ -164,6 +172,7 @@ const app = {
         audio.ontimeupdate = () => {
             const progressPercent = Math.floor(audio.currentTime / audio.duration * 100);
             progress.value = progressPercent;
+            // progress.style.width = progressPercent;
         }
 
         // Skip in the song
